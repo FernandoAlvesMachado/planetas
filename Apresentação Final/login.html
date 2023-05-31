@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="fundoprincipal">
+    <div class="linhaVertical"></div>
+    <div class="linhaHorizontal"></div>
+    <nav class="menuInicio dflex">
+        <p>Sobre</p>
+        <p>Curiosidade</p>
+        <p>Sistemas</p>
+        <p>Contato</p>
+    </nav>
+    <div class="principal">
+        <div class="icones">
+            <img src="https://cdn-icons-png.flaticon.com/512/739/739237.png" alt="" srcset="">
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" alt="" srcset="">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="">
+        </div>
+        <div class="textoMeu">
+            <h1 id="tituloPlanetas">Planeta Terra</h1>
+            <P id="textoSobrePlaneta">O planeta Terra, nosso lar cósmico, é um lugar incrível e diversificado, repleto de maravilhas naturais e uma infinidade de formas de vida. Situado na vastidão do espaço, o planeta Terra é o terceiro mais próximo do Sol em nosso sistema solar e o único conhecido até agora a abrigar vida.</P>            
+            <div class="botoesParaTrocaPlaneta dflex">
+                <button onclick="planetaAnterior()">Anterior</button>
+                <button onclick="proximoPlaneta()">Proximo</button>
+            </div>
+        </div>
+        <div class="planetaTerra">
+            <img id="planetaAtual" src="Assets/image 1.png" alt="" srcset="">
+        </div>
+    </div>
+</body>
+</html>

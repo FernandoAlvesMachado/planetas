@@ -18,11 +18,9 @@ body{
 .menuInicio{
     z-index: 5;
     position: absolute;
-    padding:0 20px ;
-    /* left: 0px; */
+    padding: 20px ;
     right: 200px;
     top: 120px;
-    /* bottom: 0; */
     max-width: 1200px;
     font-size: 30px;
     gap: 40px;
@@ -90,7 +88,6 @@ body{
         scale: 1.8;
     }
 }
-
 .textoMeu{
     max-width: 30%;
     margin-right: 50px;
@@ -107,6 +104,7 @@ body{
 
 .botoesParaTrocaPlaneta{
     justify-content: space-between;
+
     >button{
         color: #e4e4e4;
         border-radius: 35px;
@@ -142,10 +140,10 @@ body{
     justify-content: center;
 
     >img{
-
         max-width: 780px;
         cursor: pointer;
-        transition: .3s ease-in;
+        transition: scale .3s ease-in,
+                     opacity .8s linear;
     }
     >img:hover{
         animation: rotateAnimation 5s ease-in-out;
@@ -185,7 +183,7 @@ body{
 }
 .linhaHorizontal{
     position: fixed;
-    left: 170px;
+    left: 210px;
     right: 0;
     top: 0;
     width: 5px;

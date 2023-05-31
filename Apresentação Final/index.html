@@ -10,33 +10,45 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,800;1,700&family=Sora:wght@300;800&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body class="fundoprincipal">
-    <div class="linhaVertical"></div>
-    <div class="linhaHorizontal"></div>
-    <nav class="menuInicio dflex">
-        <p>Sobre</p>
-        <p>Curiosidade</p>
-        <p>Sistemas</p>
-        <p>Contato</p>
-    </nav>
-    <div class="principal">
-        <div class="icones">
-            <img src="https://cdn-icons-png.flaticon.com/512/739/739237.png" alt="" srcset="">
-            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" alt="" srcset="">
-            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="">
+    <div class="sectionInicio">
+        <div>
+            
+            <img onclick="home()" class="logoInicio" src="Assets/image 1.png" alt="logo">
         </div>
-        <div class="textoMeu">
-            <h1 id="tituloPlanetas">Planeta Terra</h1>
-            <P id="textoSobrePlaneta">O planeta Terra, nosso lar cósmico, é um lugar incrível e diversificado, repleto de maravilhas naturais e uma infinidade de formas de vida. Situado na vastidão do espaço, o planeta Terra é o terceiro mais próximo do Sol em nosso sistema solar e o único conhecido até agora a abrigar vida.</P>            
-            <div class="botoesParaTrocaPlaneta dflex">
-                <button onclick="planetaAnterior()">Anterior</button>
-                <button onclick="proximoPlaneta()">Proximo</button>
-            </div>
+        <div class="menu">
+            <p onclick="sobre()">Sobre</p>
+            <p onclick="portifolio()">portifolio</p>
+            <p>Pacotes</p>
+            <p>Contato</p>
         </div>
-        <div class="planetaTerra">
-            <img id="planetaAtual" src="Assets/image 1.png" alt="" srcset="">
+        <div>
+            <button>Entre em contato!</button>
         </div>
     </div>
+    
+    <div class="sectionSegundo">
+        <div>
+            <h1>Conheça já sobre<br>os planetas do nosso<br>Sistema Solar</h1>
+            <br>
+        </div>
+        <div>
+            <div class="FormularioPronto">
+                <img src="Assets/logo sem dunso 1.png" alt="">
+                <h1>Olá, Bem vindo!</h1>
+                <input id="iptEmail" placeholder="Seu Email" type="email">
+                <input id="iptSenha" placeholder="Sua Senha" type="password">
+                <div class="aceito">
+                    <input type="checkbox"> <span>Eu li e aceito os termos.</span>    
+                </div>
+                <div class="gap">
+                    <button id="btnLogar" onclick="logar()">Entrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 </body>
 </html>
